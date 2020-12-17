@@ -112,3 +112,39 @@ if __name__ == '__main__':
     print(data1)
     print(data2)
     print(dup)
+    
+    solution :
+5b:if k in data1:
+            v1 = data1[k]
+        if v1 != v2:
+            dupKeys[k] = [v1, v2]
+            del data1[k]
+        else:
+            data1[k] = v2
+    return dupKeys
+
+5a :input
+    3
+    1 2
+    2 2
+    8 9
+    2
+    3 3
+    2 8
+    the output had to be
+    {1:2,2:2,8:9}
+    [[3,3],[2,8]]
+    {2,[2,8]}
+    but this is nt what we get
+    
+    5c:
+        test case 1
+        4
+        3 4
+        5 6
+        2 9
+        3 3
+        2
+        2 2
+        1 8
+     
